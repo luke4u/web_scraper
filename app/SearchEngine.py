@@ -37,7 +37,7 @@ class SearchEngine(object):
             raise
         return result
 
-    # TODO: seems the max num of results by googlesearch is 100, try google-search-api in run_new() - LS
+    # TODO: seems the max num of results by google search is 100, try google-search-api in run_new() - LS
     def run(self, data: pd.DataFrame) -> pd.DataFrame:
         self.logger.log_info('SearchEngine',
                              'Starting search engine')

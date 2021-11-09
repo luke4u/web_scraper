@@ -2691,3 +2691,39 @@ KeyError: 'Only a column name can be used for the key in a dtype mappings argume
 2021-08-31 t15:16:42, 344  ScrapeService INFO Took 3.1211276054382324 seconds to complete
 2021-08-31 t15:16:42, 344  ScrapeService INFO Ending ScrapeService ...
 2021-08-31 t15:16:42, 345  ScrapeService_Runner INFO Stopping ScrapeService instance ...
+2021-11-09 t22:12:29, 65  StandardLogger INFO Configured standard logger for APP 
+ output to C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/app/resources/log_files/scrape_service_instance_1_logger.txt
+2021-11-09 t22:12:29, 65  ScrapeService_Runner INFO Starting ScrapeService instance
+2021-11-09 t22:12:29, 67  ScrapeService INFO Starting ScrapeServicein DEV mode
+2021-11-09 t22:12:29, 67  ScrapeService INFO Starting ScrapeTermReader
+2021-11-09 t22:12:29, 75  ScrapeTermReader INFO Read 2 record(s)
+2021-11-09 t22:12:29, 75  ScrapeService INFO Starting SearchEngine
+2021-11-09 t22:12:29, 75  SearchEngine INFO Starting search engine
+2021-11-09 t22:12:30, 725  SearchEngine INFO Took 1.649996042251587 seconds to complete 2 searches
+2021-11-09 t22:12:30, 732  SearchEngine INFO post transform 11 record(s)
+2021-11-09 t22:12:30, 732  ScrapeService INFO Starting ScrapeEngine
+2021-11-09 t22:12:30, 732  ScraperEngine INFO Starting ScraperEngine
+2021-11-09 t22:12:30, 739  ScraperEngine INFO Scrapping https://realpython.com/python-data-engineer/
+2021-11-09 t22:12:30, 744  ScraperEngine INFO Scrapping https://www.datasciencegraduateprograms.com/data-engineering/
+2021-11-09 t22:12:30, 747  ScraperEngine INFO Scrapping https://www.altexsoft.com/blog/datascience/what-is-data-engineering-explaining-data-pipeline-data-warehouse-and-data-engineer-role/
+2021-11-09 t22:12:30, 750  ScraperEngine INFO Scrapping https://searchdatamanagement.techtarget.com/definition/data-engineer
+2021-11-09 t22:12:30, 753  ScraperEngine INFO Scrapping https://www.coursera.org/articles/what-does-a-data-engineer-do-and-how-do-i-become-one
+2021-11-09 t22:12:30, 756  ScraperEngine INFO Scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-09 t22:12:30, 759  ScraperEngine INFO Scrapping https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7
+2021-11-09 t22:12:30, 764  ScraperEngine INFO Scrapping https://www.datacamp.com/community/blog/the-path-to-becoming-a-data-engineer
+2021-11-09 t22:12:30, 768  ScraperEngine INFO Scrapping https://www.talend.com/resources/data-engineering/
+2021-11-09 t22:12:30, 770  ScraperEngine INFO Scrapping https://www.dataquest.io/blog/what-is-a-data-engineer/
+2021-11-09 t22:12:31, 2  ScraperEngine INFO Scrapping https://www.xplenty.com/blog/data-engineering-what-does-a-data-engineer-do-how-do-i-become-one/
+2021-11-09 t22:12:31, 56  ScraperEngine  INFO bad response received!
+2021-11-09 t22:12:32, 93  ScraperEngine INFO Error during scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-09 t22:12:32, 101  ScrapeEngine INFO Took 1.366999864578247 seconds to complete 11 scrapping
+2021-11-09 t22:12:32, 117  ScrapeService INFO Flag 2 term record(s) with url but no html 
+                       term  ... _merge
+5  how to data engineering  ...   both
+7  how to data engineering  ...   both
+
+[2 rows x 4 columns]
+2021-11-09 t22:12:32, 117  ScrapeService INFO Starting FileDataArchiveIO
+2021-11-09 t22:12:32, 188  ScrapeService INFO Took 3.1209967136383057 seconds to complete
+2021-11-09 t22:12:32, 188  ScrapeService INFO Ending ScrapeService ...
+2021-11-09 t22:12:32, 189  ScrapeService_Runner INFO Stopping ScrapeService instance ...
