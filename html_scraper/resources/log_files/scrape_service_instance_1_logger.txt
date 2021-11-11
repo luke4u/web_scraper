@@ -2727,3 +2727,137 @@ KeyError: 'Only a column name can be used for the key in a dtype mappings argume
 2021-11-09 t22:12:32, 188  ScrapeService INFO Took 3.1209967136383057 seconds to complete
 2021-11-09 t22:12:32, 188  ScrapeService INFO Ending ScrapeService ...
 2021-11-09 t22:12:32, 189  ScrapeService_Runner INFO Stopping ScrapeService instance ...
+2021-11-10 t21:38:53, 180  StandardLogger INFO Configured standard logger for APP 
+ output to C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/src/resources/log_files/scrape_service_instance_1_logger.txt
+2021-11-10 t21:38:53, 180  ScrapeService_Runner INFO Starting ScrapeService instance
+2021-11-10 t21:38:53, 182  ScrapeService INFO Starting ScrapeServicein DEV mode
+2021-11-10 t21:38:53, 183  ScrapeService INFO Starting ScrapeTermReader
+2021-11-10 t21:38:53, 183  Main ERROR Error ... shutting down [Errno 2] No such file or directory: 'C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/app/resources/data/term_data.csv'
+Traceback (most recent call last):
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\ScrapeService_Runner.py", line 19, in run_instance
+    scrape_service.run()
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\ScrapeService.py", line 36, in run
+    term_data = data_reader.extract()
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\data_readers\ScrapeTermReader.py", line 20, in extract
+    data = pd.read_csv(self.location)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\common.py", line 706, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/app/resources/data/term_data.csv'
+2021-11-10 t21:39:24, 517  StandardLogger INFO Configured standard logger for APP 
+ output to C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/src/resources/log_files/scrape_service_instance_1_logger.txt
+2021-11-10 t21:39:24, 517  ScrapeService_Runner INFO Starting ScrapeService instance
+2021-11-10 t21:39:24, 520  ScrapeService INFO Starting ScrapeServicein DEV mode
+2021-11-10 t21:39:24, 520  ScrapeService INFO Starting ScrapeTermReader
+2021-11-10 t21:39:24, 521  Main ERROR Error ... shutting down [Errno 2] No such file or directory: 'C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/app/resources/data/term_data.csv'
+Traceback (most recent call last):
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\ScrapeService_Runner.py", line 19, in run_instance
+    scrape_service.run()
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\ScrapeService.py", line 36, in run
+    term_data = data_reader.extract()
+  File "C:\Users\Luke Sun\PycharmProjects\DataEngineeringProject\src\data_readers\ScrapeTermReader.py", line 20, in extract
+    data = pd.read_csv(self.location)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\parsers\base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "C:\Users\Luke Sun\anaconda3\envs\web_scraper\lib\site-packages\pandas\io\common.py", line 706, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/app/resources/data/term_data.csv'
+2021-11-10 t21:42:57, 138  StandardLogger INFO Configured standard logger for APP 
+ output to C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/src/resources/log_files/scrape_service_instance_1_logger.txt
+2021-11-10 t21:42:57, 138  ScrapeService_Runner INFO Starting ScrapeService instance
+2021-11-10 t21:42:57, 142  ScrapeService INFO Starting ScrapeServicein DEV mode
+2021-11-10 t21:42:57, 143  ScrapeService INFO Starting ScrapeTermReader
+2021-11-10 t21:42:57, 156  ScrapeTermReader INFO Read 2 record(s)
+2021-11-10 t21:42:57, 156  ScrapeService INFO Starting SearchEngine
+2021-11-10 t21:42:57, 156  SearchEngine INFO Starting search engine
+2021-11-10 t21:42:58, 841  SearchEngine INFO Took 1.6840007305145264 seconds to complete 2 searches
+2021-11-10 t21:42:58, 851  SearchEngine INFO post transform 11 record(s)
+2021-11-10 t21:42:58, 851  ScrapeService INFO Starting ScrapeEngine
+2021-11-10 t21:42:58, 851  ScraperEngine INFO Starting ScraperEngine
+2021-11-10 t21:42:58, 857  ScraperEngine INFO Scrapping https://realpython.com/python-data-engineer/
+2021-11-10 t21:42:58, 859  ScraperEngine INFO Scrapping https://searchdatamanagement.techtarget.com/definition/data-engineer
+2021-11-10 t21:42:58, 863  ScraperEngine INFO Scrapping https://www.coursera.org/articles/what-does-a-data-engineer-do-and-how-do-i-become-one
+2021-11-10 t21:42:58, 868  ScraperEngine INFO Scrapping https://www.datasciencegraduateprograms.com/data-engineering/
+2021-11-10 t21:42:58, 869  ScraperEngine INFO Scrapping https://www.altexsoft.com/blog/datascience/what-is-data-engineering-explaining-data-pipeline-data-warehouse-and-data-engineer-role/
+2021-11-10 t21:42:58, 881  ScraperEngine INFO Scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-10 t21:42:58, 894  ScraperEngine INFO Scrapping https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7
+2021-11-10 t21:42:58, 895  ScraperEngine INFO Scrapping https://www.datacamp.com/community/blog/the-path-to-becoming-a-data-engineer
+2021-11-10 t21:42:58, 907  ScraperEngine INFO Scrapping https://www.dremio.com/data-lake/data-engineering/
+2021-11-10 t21:42:58, 908  ScraperEngine INFO Scrapping https://www.talend.com/resources/data-engineering/
+2021-11-10 t21:42:59, 99  ScraperEngine INFO Scrapping https://www.xplenty.com/blog/data-engineering-what-does-a-data-engineer-do-how-do-i-become-one/
+2021-11-10 t21:42:59, 106  ScraperEngine  INFO bad response received!
+2021-11-10 t21:43:00, 31  ScraperEngine INFO Error during scrapping https://www.altexsoft.com/blog/datascience/what-is-data-engineering-explaining-data-pipeline-data-warehouse-and-data-engineer-role/
+2021-11-10 t21:43:00, 225  ScraperEngine INFO Error during scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-10 t21:43:00, 230  ScrapeEngine INFO Took 1.3760011196136475 seconds to complete 11 scrapping
+2021-11-10 t21:43:00, 267  ScrapeService INFO Flag 3 term record(s) with url but no html 
+                       term  ... _merge
+4  how to data engineering  ...   both
+5  how to data engineering  ...   both
+7  how to data engineering  ...   both
+
+[3 rows x 4 columns]
+2021-11-10 t21:43:00, 269  ScrapeService INFO Starting FileDataArchiveIO
+2021-11-10 t21:43:00, 322  ScrapeService INFO Took 3.1799983978271484 seconds to complete
+2021-11-10 t21:43:00, 323  ScrapeService INFO Ending ScrapeService ...
+2021-11-10 t21:43:00, 324  ScrapeService_Runner INFO Stopping ScrapeService instance ...
+2021-11-10 t21:44:13, 287  StandardLogger INFO Configured standard logger for APP 
+ output to C:/Users/Luke Sun/PycharmProjects/DataEngineeringProject/src/resources/log_files/scrape_service_instance_1_logger.txt
+2021-11-10 t21:44:13, 287  ScrapeService_Runner INFO Starting ScrapeService instance
+2021-11-10 t21:44:13, 288  ScrapeService INFO Starting ScrapeServicein DEV mode
+2021-11-10 t21:44:13, 288  ScrapeService INFO Starting ScrapeTermReader
+2021-11-10 t21:44:13, 295  ScrapeTermReader INFO Read 2 record(s)
+2021-11-10 t21:44:13, 295  ScrapeService INFO Starting SearchEngine
+2021-11-10 t21:44:13, 295  SearchEngine INFO Starting search engine
+2021-11-10 t21:44:14, 420  SearchEngine INFO Took 1.1240003108978271 seconds to complete 2 searches
+2021-11-10 t21:44:14, 425  SearchEngine INFO post transform 11 record(s)
+2021-11-10 t21:44:14, 425  ScrapeService INFO Starting ScrapeEngine
+2021-11-10 t21:44:14, 425  ScraperEngine INFO Starting ScraperEngine
+2021-11-10 t21:44:14, 427  ScraperEngine INFO Scrapping https://realpython.com/python-data-engineer/
+2021-11-10 t21:44:14, 428  ScraperEngine INFO Scrapping https://searchdatamanagement.techtarget.com/definition/data-engineer
+2021-11-10 t21:44:14, 429  ScraperEngine INFO Scrapping https://www.coursera.org/articles/what-does-a-data-engineer-do-and-how-do-i-become-one
+2021-11-10 t21:44:14, 431  ScraperEngine INFO Scrapping https://www.altexsoft.com/blog/datascience/what-is-data-engineering-explaining-data-pipeline-data-warehouse-and-data-engineer-role/
+2021-11-10 t21:44:14, 432  ScraperEngine INFO Scrapping https://www.datasciencegraduateprograms.com/data-engineering/
+2021-11-10 t21:44:14, 436  ScraperEngine INFO Scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-10 t21:44:14, 437  ScraperEngine INFO Scrapping https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7
+2021-11-10 t21:44:14, 439  ScraperEngine INFO Scrapping https://www.datacamp.com/community/blog/the-path-to-becoming-a-data-engineer
+2021-11-10 t21:44:14, 441  ScraperEngine INFO Scrapping https://www.dremio.com/data-lake/data-engineering/
+2021-11-10 t21:44:14, 443  ScraperEngine INFO Scrapping https://www.talend.com/resources/data-engineering/
+2021-11-10 t21:44:14, 564  ScraperEngine  INFO bad response received!
+2021-11-10 t21:44:14, 564  ScraperEngine INFO Scrapping https://www.dataquest.io/blog/what-is-a-data-engineer/
+2021-11-10 t21:44:15, 682  ScraperEngine INFO Error during scrapping https://quanthub.com/what-is-data-engineering/
+2021-11-10 t21:44:15, 684  ScrapeEngine INFO Took 1.257997989654541 seconds to complete 11 scrapping
+2021-11-10 t21:44:15, 699  ScrapeService INFO Flag 2 term record(s) with url but no html 
+                       term  ... _merge
+5  how to data engineering  ...   both
+7  how to data engineering  ...   both
+
+[2 rows x 4 columns]
+2021-11-10 t21:44:15, 699  ScrapeService INFO Starting FileDataArchiveIO
+2021-11-10 t21:44:15, 758  ScrapeService INFO Took 2.469999313354492 seconds to complete
+2021-11-10 t21:44:15, 758  ScrapeService INFO Ending ScrapeService ...
+2021-11-10 t21:44:15, 759  ScrapeService_Runner INFO Stopping ScrapeService instance ...

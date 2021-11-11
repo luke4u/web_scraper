@@ -4,9 +4,9 @@ import time
 import pandas as pd
 import requests
 
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib
-from common.lib.Logger import ClassLogger
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib
+from html_scraper.lib.Logger import ClassLogger
 
 
 class ScrapeEngine(object):

@@ -1,11 +1,11 @@
-from app.ScrapeService import ScrapeService
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib
-from common.lib.Logger import StandardLogger
+from html_scraper.ScrapeService import ScrapeService
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib
+from html_scraper.lib.Logger import StandardLogger
 
 
 def run_instance(instance_id):
-    app_location = io_lib.app_location_path('app')
+    app_location = io_lib.app_location_path('html_scraper')
     log_file = io_lib.get_log_file(app_location, ending=f'scrape_service_instance_{instance_id}_logger.txt')
     instance_logger = StandardLogger('app', output_filename=log_file)
 

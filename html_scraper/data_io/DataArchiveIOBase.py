@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from common.lib.Logger import ClassLogger
+from html_scraper.lib.Logger import ClassLogger
 
 
 class DataArchiveIOBase(ABC):

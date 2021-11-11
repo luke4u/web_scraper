@@ -62,7 +62,7 @@ def shopping(query, pages=1):
                 if psliimg:
                     img = psliimg.find("img")
                     if img:
-                        res.thumb = img["src"]
+                        res.thumb = img["html_scraper"]
 
                 f = prod.find("div", "f")
                 if f:

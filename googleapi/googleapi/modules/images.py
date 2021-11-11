@@ -349,9 +349,9 @@ def _get_thumb_data(res, img):
         a: An "a" html tag.
     """
     try:
-        res.thumb = img[0]["src"]
+        res.thumb = img[0]["html_scraper"]
     except:
-        res.thumb = img[0]["data-src"]
+        res.thumb = img[0]["data-html_scraper"]
 
     try:
         img_style = img[0]["style"].split(";")

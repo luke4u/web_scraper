@@ -2,7 +2,7 @@ from typing import Union
 
 import pandas as pd
 
-from common.lib.Logger import ClassLogger, StandardLogger
+from html_scraper.lib.Logger import ClassLogger, StandardLogger
 
 
 class ScrapeTermReader(object):

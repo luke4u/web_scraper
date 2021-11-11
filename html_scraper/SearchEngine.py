@@ -5,10 +5,10 @@ import googlesearch
 import numpy as np
 import pandas as pd
 
-from app.data_readers.ScrapeTermReader import ScrapeTermReader
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib
-from common.lib.Logger import ClassLogger, StandardLogger
+from html_scraper.data_readers.ScrapeTermReader import ScrapeTermReader
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib
+from html_scraper.lib.Logger import ClassLogger, StandardLogger
 from googleapi import googleapi
 
 

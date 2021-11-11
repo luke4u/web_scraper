@@ -1,9 +1,9 @@
 import pandas as pd
 
-from app.data_io.DataArchiveIOBase import DataArchiveIOBase
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib
-from common.lib.Logger import ClassLogger
+from html_scraper.data_io.DataArchiveIOBase import DataArchiveIOBase
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib
+from html_scraper.lib.Logger import ClassLogger
 
 
 class FileDataArchiveIO(DataArchiveIOBase):

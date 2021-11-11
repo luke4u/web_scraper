@@ -1,0 +1,7 @@
+include html_scraper/resources/config/yaml/*.yml
+include html_scraper/resources/data/*.csv
+include googleapi/*
+include ReadMe.txt
+include requirements.txt
+include Dockerfile
+include environment.yml

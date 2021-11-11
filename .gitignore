@@ -30,7 +30,8 @@ cache
 resources/log_files
 q&a
 dev_test.py
-README.md
+README_intro.md
+ReadMe.txt
 
 
 # PyInstaller

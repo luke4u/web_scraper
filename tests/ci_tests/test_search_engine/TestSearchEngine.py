@@ -1,10 +1,10 @@
 import pandas as pd
 import pytest
 
-from app.SearchEngine import SearchEngine
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib
-from common.lib.Logger import StandardLogger
+from html_scraper.SearchEngine import SearchEngine
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib
+from html_scraper.lib.Logger import StandardLogger
 
 
 @pytest.fixture(scope='class')

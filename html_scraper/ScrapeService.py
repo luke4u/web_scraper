@@ -4,13 +4,13 @@ from typing import Union
 
 import pandas as pd
 
-from app.ScrapeEngine import ScrapeEngine
-from app.SearchEngine import SearchEngine
-from app.data_io.FileDataArchiveIO import FileDataArchiveIO
-from app.data_readers.ScrapeTermReader import ScrapeTermReader
-from common.config.EngineConfig import EngineConfig
-from common.lib import io_lib, data_lib
-from common.lib.Logger import ClassLogger, StandardLogger
+from html_scraper.ScrapeEngine import ScrapeEngine
+from html_scraper.SearchEngine import SearchEngine
+from html_scraper.data_io.FileDataArchiveIO import FileDataArchiveIO
+from html_scraper.data_readers.ScrapeTermReader import ScrapeTermReader
+from html_scraper.config.EngineConfig import EngineConfig
+from html_scraper.lib import io_lib, data_lib
+from html_scraper.lib.Logger import ClassLogger, StandardLogger
 
 
 class ScrapeService(object):
@@ -28,7 +28,7 @@ class ScrapeService(object):
         t0 = time.time()
         self.logger.log_info('ScrapeService', f'Starting ScrapeService'
                                               f'in {self.engine_config.get_mode().upper()} mode')
-        app_location = io_lib.app_location_path('app')
+        app_location = io_lib.app_location_path('html_scraper')
         term_data_location = io_lib.get_source_data_file(app_location, 'term_data.csv')
 
         self.logger.log_info('ScrapeService', f'Starting ScrapeTermReader')
